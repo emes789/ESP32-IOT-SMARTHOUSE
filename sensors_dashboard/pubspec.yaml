@@ -1,0 +1,67 @@
+name: sensors_dashboard
+description: Smart House IoT Dashboard with MongoDB and ESP32 Camera support.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- CORE IOT & DATABASE ---
+  # Baza danych
+  mongo_dart: ^0.10.1
+  
+  # Bluetooth (Provisioning)
+  flutter_blue_plus: ^1.31.0
+  
+  # Wideo (Kamera)
+  flutter_vlc_player: ^7.4.1  # Android, Desktop, Web
+  video_player: ^2.9.2        # iOS kompatybilność
+
+  # --- UI & EXTRAS ---
+  # Zarządzanie stanem
+  provider: ^6.1.2
+
+  # Wykresy
+  fl_chart: ^0.68.0
+
+  # Wygląd i Animacje
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10+1
+
+  # Narzędzia
+  intl: ^0.19.0
+  http: ^1.2.0
+  shared_preferences: ^2.2.2
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# Konfiguracja ikon aplikacji - commented out until custom icon is available
+# flutter_launcher_icons:
+#   android: true
+#   ios: true
+#   image_path: "assets/icon/app_icon.png"
+#   adaptive_icon_background: "#1A1A2E"
+#   adaptive_icon_foreground: "assets/icon/app_icon.png"
+#   min_sdk_android: 21
+# Default Flutter icons are being used
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/translations/fallback.json
+    - assets/icon/
+    - .env

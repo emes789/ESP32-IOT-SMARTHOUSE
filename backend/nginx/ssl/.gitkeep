@@ -1,0 +1,2 @@
+# Ten plik jest placeholder aby utrzymać folder ssl w Git
+# Prawdziwe certyfikaty (.pem, .key) są w .gitignore

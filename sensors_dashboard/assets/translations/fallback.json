@@ -1,0 +1,365 @@
+{
+  "System Online": {
+    "pl": "System Online",
+    "en": "System Online",
+    "es": "Sistema en línea",
+    "de": "System Online",
+    "fr": "Système en ligne"
+  },
+  "Wszystkie systemy działają prawidłowo": {
+    "pl": "Wszystkie systemy działają prawidłowo",
+    "en": "All systems are working properly",
+    "es": "Todos los sistemas funcionan correctamente",
+    "de": "Alle Systeme funktionieren ordnungsgemäß",
+    "fr": "Tous les systèmes fonctionnent correctement"
+  },
+  "Dashboard": {
+    "pl": "Dashboard",
+    "en": "Dashboard",
+    "es": "Panel",
+    "de": "Dashboard",
+    "fr": "Tableau de bord"
+  },
+  "Historia": {
+    "pl": "Historia",
+    "en": "History",
+    "es": "Historial",
+    "de": "Verlauf",
+    "fr": "Historique"
+  },
+  "Alerty": {
+    "pl": "Alerty",
+    "en": "Alerts",
+    "es": "Alertas",
+    "de": "Alarme",
+    "fr": "Alertes"
+  },
+  "Ustawienia": {
+    "pl": "Ustawienia",
+    "en": "Settings",
+    "es": "Ajustes",
+    "de": "Einstellungen",
+    "fr": "Paramètres"
+  },
+  "Temperatura": {
+    "pl": "Temperatura",
+    "en": "Temperature",
+    "es": "Temperatura",
+    "de": "Temperatur",
+    "fr": "Température"
+  },
+  "Wilgotność": {
+    "pl": "Wilgotność",
+    "en": "Humidity",
+    "es": "Humedad",
+    "de": "Luftfeuchtigkeit",
+    "fr": "Humidité"
+  },
+  "Ruch": {
+    "pl": "Ruch",
+    "en": "Motion",
+    "es": "Movimiento",
+    "de": "Bewegung",
+    "fr": "Mouvement"
+  },
+  "Normalny": {
+    "pl": "Normalny",
+    "en": "Normal",
+    "es": "Normal",
+    "de": "Normal",
+    "fr": "Normal"
+  },
+  "Ostrzeżenie": {
+    "pl": "Ostrzeżenie",
+    "en": "Warning",
+    "es": "Advertencia",
+    "de": "Warnung",
+    "fr": "Avertissement"
+  },
+  "Brak ruchu": {
+    "pl": "Brak ruchu",
+    "en": "No motion",
+    "es": "Sin movimiento",
+    "de": "Keine Bewegung",
+    "fr": "Pas de mouvement"
+  },
+  "Użytkownik Systemu": {
+    "pl": "Użytkownik Systemu",
+    "en": "System User",
+    "es": "Usuario del Sistema",
+    "de": "Systembenutzer",
+    "fr": "Utilisateur du Système"
+  },
+  "Administrator czujników IoT": {
+    "pl": "Administrator czujników IoT",
+    "en": "IoT Sensors Administrator",
+    "es": "Administrador de sensores IoT",
+    "de": "IoT-Sensorenadministrator",
+    "fr": "Administrateur des capteurs IoT"
+  },
+  "Online": {
+    "pl": "Online",
+    "en": "Online",
+    "es": "En línea",
+    "de": "Online",
+    "fr": "En ligne"
+  },
+  "Wygląd": {
+    "pl": "Wygląd",
+    "en": "Appearance",
+    "es": "Apariencia",
+    "de": "Erscheinungsbild",
+    "fr": "Apparence"
+  },
+  "Motyw": {
+    "pl": "Motyw",
+    "en": "Theme",
+    "es": "Tema",
+    "de": "Thema",
+    "fr": "Thème"
+  },
+  "Powiadomienia": {
+    "pl": "Powiadomienia",
+    "en": "Notifications",
+    "es": "Notificaciones",
+    "de": "Benachrichtigungen",
+    "fr": "Notifications"
+  },
+  "Powiadomienia push": {
+    "pl": "Powiadomienia push",
+    "en": "Push notifications",
+    "es": "Notificaciones push",
+    "de": "Push-Benachrichtigungen",
+    "fr": "Notifications push"
+  },
+  "Otrzymuj alerty w czasie rzeczywistym": {
+    "pl": "Otrzymuj alerty w czasie rzeczywistym",
+    "en": "Receive real-time alerts",
+    "es": "Recibir alertas en tiempo real",
+    "de": "Erhalten Sie Echtzeitalarme",
+    "fr": "Recevoir des alertes en temps réel"
+  },
+  "Dźwięki": {
+    "pl": "Dźwięki",
+    "en": "Sounds",
+    "es": "Sonidos",
+    "de": "Töne",
+    "fr": "Sons"
+  },
+  "Odtwarzaj dźwięki dla alertów": {
+    "pl": "Odtwarzaj dźwięki dla alertów",
+    "en": "Play sounds for alerts",
+    "es": "Reproducir sonidos para alertas",
+    "de": "Töne für Alarme abspielen",
+    "fr": "Jouer des sons pour les alertes"
+  },
+  "Wibracje": {
+    "pl": "Wibracje",
+    "en": "Vibrations",
+    "es": "Vibraciones",
+    "de": "Vibrationen",
+    "fr": "Vibrations"
+  },
+  "Wibruj przy otrzymaniu alertu": {
+    "pl": "Wibruj przy otrzymaniu alertu",
+    "en": "Vibrate when receiving an alert",
+    "es": "Vibrar al recibir una alerta",
+    "de": "Bei Alarmerhalt vibrieren",
+    "fr": "Vibrer lors de la réception d'une alerte"
+  },
+  "Dane i Synchronizacja": {
+    "pl": "Dane i Synchronizacja",
+    "en": "Data and Synchronization",
+    "es": "Datos y Sincronización",
+    "de": "Daten und Synchronisierung",
+    "fr": "Données et Synchronisation"
+  },
+  "Interwał odświeżania": {
+    "pl": "Interwał odświeżania",
+    "en": "Refresh interval",
+    "es": "Intervalo de actualización",
+    "de": "Aktualisierungsintervall",
+    "fr": "Intervalle de rafraîchissement"
+  },
+  "Częstotliwość pobierania nowych danych": {
+    "pl": "Częstotliwość pobierania nowych danych",
+    "en": "Frequency of downloading new data",
+    "es": "Frecuencia de descarga de nuevos datos",
+    "de": "Häufigkeit des Herunterladens neuer Daten",
+    "fr": "Fréquence de téléchargement de nouvelles données"
+  },
+  "Język": {
+    "pl": "Język",
+    "en": "Language",
+    "es": "Idioma",
+    "de": "Sprache",
+    "fr": "Langue"
+  },
+  "Wyczyść cache": {
+    "pl": "Wyczyść cache",
+    "en": "Clear cache",
+    "es": "Borrar caché",
+    "de": "Cache leeren",
+    "fr": "Vider le cache"
+  },
+  "Usuń zapisane dane tymczasowe": {
+    "pl": "Usuń zapisane dane tymczasowe",
+    "en": "Delete saved temporary data",
+    "es": "Eliminar datos temporales guardados",
+    "de": "Gespeicherte temporäre Daten löschen",
+    "fr": "Supprimer les données temporaires enregistrées"
+  },
+  "Eksportuj dane": {
+    "pl": "Eksportuj dane",
+    "en": "Export data",
+    "es": "Exportar datos",
+    "de": "Daten exportieren",
+    "fr": "Exporter des données"
+  },
+  "Pobierz kopię danych czujników": {
+    "pl": "Pobierz kopię danych czujników",
+    "en": "Download a copy of sensor data",
+    "es": "Descargar una copia de los datos de los sensores",
+    "de": "Laden Sie eine Kopie der Sensordaten herunter",
+    "fr": "Télécharger une copie des données des capteurs"
+  },
+  "O aplikacji": {
+    "pl": "O aplikacji",
+    "en": "About the app",
+    "es": "Acerca de la aplicación",
+    "de": "Über die App",
+    "fr": "À propos de l'application"
+  },
+  "Wersja": {
+    "pl": "Wersja",
+    "en": "Version",
+    "es": "Versión",
+    "de": "Version",
+    "fr": "Version"
+  },
+  "Platforma": {
+    "pl": "Platforma",
+    "en": "Platform",
+    "es": "Plataforma",
+    "de": "Plattform",
+    "fr": "Plateforme"
+  },
+  "Ostatnia aktualizacja": {
+    "pl": "Ostatnia aktualizacja",
+    "en": "Last update",
+    "es": "Última actualización",
+    "de": "Letzte Aktualisierung",
+    "fr": "Dernière mise à jour"
+  },
+  "Licencje": {
+    "pl": "Licencje",
+    "en": "Licenses",
+    "es": "Licencias",
+    "de": "Lizenzen",
+    "fr": "Licences"
+  },
+  "Pokaż licencje używanych bibliotek": {
+    "pl": "Pokaż licencje używanych bibliotek",
+    "en": "Show licenses for used libraries",
+    "es": "Mostrar licencias para bibliotecas utilizadas",
+    "de": "Lizenzen für verwendete Bibliotheken anzeigen",
+    "fr": "Afficher les licences des bibliothèques utilisées"
+  },
+  "Informacje": {
+    "pl": "Informacje",
+    "en": "Information",
+    "es": "Información",
+    "de": "Informationen",
+    "fr": "Informations"
+  },
+  "O systemie monitorowania czujników": {
+    "pl": "O systemie monitorowania czujników",
+    "en": "About the sensor monitoring system",
+    "es": "Acerca del sistema de monitoreo de sensores",
+    "de": "Über das Sensorüberwachungssystem",
+    "fr": "À propos du système de surveillance des capteurs"
+  },
+  "Wybierz język": {
+    "pl": "Wybierz język",
+    "en": "Select language",
+    "es": "Seleccionar idioma",
+    "de": "Sprache auswählen",
+    "fr": "Sélectionner la langue"
+  },
+  "Czy na pewno chcesz usunąć wszystkie dane tymczasowe?": {
+    "pl": "Czy na pewno chcesz usunąć wszystkie dane tymczasowe?",
+    "en": "Are you sure you want to delete all temporary data?",
+    "es": "¿Estás seguro de que quieres eliminar todos los datos temporales?",
+    "de": "Sind Sie sicher, dass Sie alle temporären Daten löschen möchten?",
+    "fr": "Êtes-vous sûr de vouloir supprimer toutes les données temporaires?"
+  },
+  "Anuluj": {
+    "pl": "Anuluj",
+    "en": "Cancel",
+    "es": "Cancelar",
+    "de": "Abbrechen",
+    "fr": "Annuler"
+  },
+  "Wyczyść": {
+    "pl": "Wyczyść",
+    "en": "Clear",
+    "es": "Borrar",
+    "de": "Löschen",
+    "fr": "Effacer"
+  },
+  "Eksport danych": {
+    "pl": "Eksport danych",
+    "en": "Data export",
+    "es": "Exportación de datos",
+    "de": "Datenexport",
+    "fr": "Exportation de données"
+  },
+  "Funkcja eksportu będzie dostępna w następnej wersji aplikacji.": {
+    "pl": "Funkcja eksportu będzie dostępna w następnej wersji aplikacji.",
+    "en": "Export function will be available in the next version of the application.",
+    "es": "La función de exportación estará disponible en la próxima versión de la aplicación.",
+    "de": "Die Exportfunktion wird in der nächsten Version der Anwendung verfügbar sein.",
+    "fr": "La fonction d'exportation sera disponible dans la prochaine version de l'application."
+  },  "OK": {
+    "pl": "OK",
+    "en": "OK",
+    "es": "OK",
+    "de": "OK",
+    "fr": "OK"
+  },
+  "API Google Cloud": {
+    "pl": "API Google Cloud",
+    "en": "Google Cloud API",
+    "es": "API de Google Cloud",
+    "de": "Google Cloud API",
+    "fr": "API Google Cloud"
+  },
+  "Skonfiguruj klucz API dla tłumaczenia": {
+    "pl": "Skonfiguruj klucz API dla tłumaczenia",
+    "en": "Configure API key for translation",
+    "es": "Configurar clave API para traducción",
+    "de": "API-Schlüssel für Übersetzung konfigurieren",
+    "fr": "Configurer la clé API pour la traduction"
+  },
+  "Klucz API skonfigurowany poprawnie": {
+    "pl": "Klucz API skonfigurowany poprawnie",
+    "en": "API key configured correctly",
+    "es": "Clave API configurada correctamente",
+    "de": "API-Schlüssel korrekt konfiguriert",
+    "fr": "Clé API configurée correctement"
+  },
+  "Zapisz": {
+    "pl": "Zapisz",
+    "en": "Save",
+    "es": "Guardar",
+    "de": "Speichern",
+    "fr": "Enregistrer"
+  },
+  "Zmiana języka...": {
+    "pl": "Zmiana języka...",
+    "en": "Changing language...",
+    "es": "Cambiando idioma...",
+    "de": "Sprache wird geändert...",
+    "fr": "Changement de langue..."
+  }
+}

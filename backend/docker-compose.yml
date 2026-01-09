@@ -1,0 +1,110 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🐳 DOCKER COMPOSE - Smart Home IoT Stack (OVH Cloud)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 
+# Uruchom: docker-compose up -d
+# Logi:    docker-compose logs -f
+# Stop:    docker-compose down
+#
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+services:
+  # ═══════════════════════════════════════════════════════════
+  # 🗄️ MongoDB Database
+  # ═══════════════════════════════════════════════════════════
+  mongo:
+    image: mongo:7.0
+    container_name: smart-home-mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-CHANGE_ME_IN_PRODUCTION}
+      MONGO_INITDB_DATABASE: smart-house-iot
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    ports:
+      - "27017:27017"  # Usuń w produkcji - tylko wewnętrzny dostęp!
+    networks:
+      - smart-home-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # ═══════════════════════════════════════════════════════════
+  # 🚀 Node.js API Server
+  # ═══════════════════════════════════════════════════════════
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smart-home-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOST: 0.0.0.0
+      # MongoDB - połączenie z kontenerem mongo
+      MONGODB_URI: mongodb://${MONGO_APP_USER:-iot_user}:${MONGO_APP_PASSWORD:-iot_password}@mongo:27017/smart-house-iot?authSource=smart-house-iot
+      MONGODB_DATABASE: smart-house-iot
+      # Bezpieczeństwo - ZMIEŃ TE KLUCZE!
+      ESP32_API_KEY: ${ESP32_API_KEY:-your-esp32-api-key-change-me}
+      FLUTTER_API_KEY: ${FLUTTER_API_KEY:-your-flutter-api-key-change-me}
+      JWT_SECRET: ${JWT_SECRET:-your-jwt-secret-change-me}
+      # Rate limiting
+      RATE_LIMIT_WINDOW_MS: 60000
+      RATE_LIMIT_MAX_REQUESTS: 100
+      # CORS
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+    ports:
+      - "3000:3000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - smart-home-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health/live"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # ═══════════════════════════════════════════════════════════
+  # 🌐 Nginx Reverse Proxy (SSL/TLS)
+  # ═══════════════════════════════════════════════════════════
+  nginx:
+    image: nginx:alpine
+    container_name: smart-home-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - api
+    networks:
+      - smart-home-network
+
+# ═══════════════════════════════════════════════════════════
+# 📦 Volumes - Persistent Data
+# ═══════════════════════════════════════════════════════════
+volumes:
+  mongo_data:
+    driver: local
+  mongo_config:
+    driver: local
+
+# ═══════════════════════════════════════════════════════════
+# 🌐 Networks
+# ═══════════════════════════════════════════════════════════
+networks:
+  smart-home-network:
+    driver: bridge

@@ -1,0 +1,12 @@
+# ...existing code...
+
+# Add this section if it doesn't exist, or update it if it does
+flutter:
+  assets:
+    # Your other assets here
+  
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/CustomIcons.ttf
+# ...existing code...

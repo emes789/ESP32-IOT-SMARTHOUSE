@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Definicja gradientu (Fiolet -> Purpura) -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ciemne tło -->
+  <rect width="512" height="512" rx="100" fill="#1A1A2E"/>
+
+  <!-- Grupa 1: Elementy gradientowe (Dom + Obwody) -->
+  <g fill="url(#grad1)">
+    
+    <!-- Kształt domu (solidny) -->
+    <path d="M256 100 L80 240 V 412 H 432 V 240 L 256 100 Z"/>
+    
+    <!-- Komin (solidny) -->
+    <rect x="350" y="110" width="40" height="50" />
+    
+    <!-- Obwody (lewa strona) -->
+    <rect x="90" y="274" width="30" height="12"/>
+    <circle cx="80" cy="280" r="12"/>
+    <rect x="90" y="324" width="30" height="12"/>
+    <circle cx="80" cy="330" r="12"/>
+    <rect x="90" y="374" width="30" height="12"/>
+    <circle cx="80" cy="380" r="12"/>
+    
+    <!-- Obwody (prawa strona) -->
+    <rect x="392" y="274" width="30" height="12"/>
+    <circle cx="432" cy="280" r="12"/>
+    <rect x="392" y="324" width="30" height="12"/>
+    <circle cx="432" cy="330" r="12"/>
+    <rect x="392" y="374" width="30" height="12"/>
+    <circle cx="432" cy="380" r="12"/>
+  </g>
+  
+  <!-- Grupa 2: Wycięcia (rysowane kolorem tła NA WIERZCHU) -->
+  <!-- Ta metoda jest prostsza dla generatora ikon -->
+  
+  <!-- Kropka WiFi -->
+  <circle cx="256" cy="350" r="25" fill="#1A1A2E"/>
+  
+  <!-- Łuki WiFi (rysowane jako linie/stroke, nie wypełnienie) -->
+  <g fill="none" stroke="#1A1A2E" stroke-width="25">
+    <path d="M205 310 A 70 70 0 0 1 307 310"/>
+    <path d="M175 270 A 110 110 0 0 1 337 270"/>
+  </g>
+</svg>

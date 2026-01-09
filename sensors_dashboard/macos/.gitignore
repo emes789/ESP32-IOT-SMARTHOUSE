@@ -1,0 +1,9 @@
+# macOS specific ignores
+**/Flutter/ephemeral/
+**/Pods/
+.DS_Store
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace
+.swiftpm/
+flutter/ephemeral/
