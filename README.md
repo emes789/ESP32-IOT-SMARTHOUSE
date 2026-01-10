@@ -431,8 +431,10 @@ const char* WIFI_SSID = "TWOJA_SIEC_WIFI";
 const char* WIFI_PASSWORD = "HASLO_DO_WIFI";
 
 // API
-const char* API_HOST = "192.168.1.100";  // IP twojego serwera (localhost: 127.0.0.1)
-const char* API_URL = "http://192.168.1.100/api/telemetry";
+const char* API_HOST =  
+const char* API_URL = 
+
+
 
 // API Key (ten sam co ESP32_API_KEY w backend/.env!)
 const char* API_KEY = "TWOJ_KLUCZ_ESP32_64_ZNAKI";
@@ -453,10 +455,8 @@ const char* LOCATION = "Salon";
 7. Ustaw **115200 baud**
 8. Powinny pojawić się logi:
    ```
-   🔌 WiFi connected: 192.168.1.123
-   ✅ API Response: 200
-   ```
-
+  
+  
 ---
 
 ### 5️⃣ Deployment na OVH (Produkcja)
